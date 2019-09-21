@@ -17,15 +17,15 @@ class TitleFragment : Fragment() {
 
 
         binding.playButton.setOnClickListener {
-            view?.findNavController()?.navigate(R.id.action_titleFragment_to_gameFragment)
+            view?.findNavController()?.navigate(TitleFragmentDirections.actionTitleFragmentToGameFragment())
         }
 
         binding.rulesButton.setOnClickListener {
-            view?.findNavController()?.navigate(R.id.rulesFragment)
+            view?.findNavController()?.navigate(TitleFragmentDirections.actionTitleFragmentToRulesFragment())
         }
 
         binding.aboutButton.setOnClickListener {
-            view?.findNavController()?.navigate(R.id.aboutFragment)
+            view?.findNavController()?.navigate(TitleFragmentDirections.actionTitleFragmentToAboutFragment())
         }
 
         setHasOptionsMenu(true)

@@ -13,6 +13,12 @@
         <action
             android:id="@+id/action_titleFragment_to_gameFragment"
             app:destination="@id/gameFragment" />
+        <action
+            android:id="@+id/action_titleFragment_to_rulesFragment"
+            app:destination="@id/rulesFragment" />
+        <action
+            android:id="@+id/action_titleFragment_to_aboutFragment"
+            app:destination="@id/aboutFragment" />
     </fragment>
 
     <fragment
@@ -50,6 +56,12 @@
             android:id="@+id/action_gameWonFragment_to_gameFragment"
             app:destination="@id/gameFragment"
             app:popUpTo="@+id/titleFragment" />
+        <argument
+            android:name="numQuestions"
+            app:argType="integer" />
+        <argument
+            android:name="numCorrect"
+            app:argType="integer" />
     </fragment>
     <fragment
         android:id="@+id/aboutFragment"
