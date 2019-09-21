@@ -102,7 +102,7 @@ class GameFragment : Fragment() {
                     }
                 } else {
                     view.findNavController()
-                            .navigate(GameFragmentDirections.actionGameFragmentToGameOverFragment())
+                            .navigate(GameFragmentDirections.actionGameFragmentToGameOverFragment(numQuestions, questionIndex))
                 }
             }
         }
